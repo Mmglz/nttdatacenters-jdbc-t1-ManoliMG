@@ -60,8 +60,24 @@
 			<version>1.4.4</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-javadoc-plugin</artifactId>
+			<version>3.4.1</version>
+		</dependency>
 	</dependencies>
-
+	
+	<!-- Plugin para generar el JavaDoc -->
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>3.4.1</version>
+			</plugin>
+		</plugins>
+	</reporting>
+	
 	<!-- Compilado del proyecto -->
 	<build>
 		<pluginManagement>
